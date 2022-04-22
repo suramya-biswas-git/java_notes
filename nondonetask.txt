@@ -1,0 +1,216 @@
+eclipse, java, Wrapper class
+
+What is JDK ?
+Whether Java is 100% OOPS language ?
+Ans : No because
+1. Java supports primitive data types.
+2. Java supports static access modifires. Static members can be accessed without object reference.
+
+What is the problem for Java supports primitive data types ?
+The primitive data types do not abide by the principles of OOPS.
+Abstraction
+Encapsulation
+Polymorphism
+Inheritance
+Association
+        |
+Aggregation     Composition
+
+class Citizen{
+  int aadharCardNumber;
+  String name;
+   Date dob;
+  Address citizenAddress;
+  Votercard voterInfo;
+}
+
+
+class Address{
+    String houseNumber;
+     String streetName;
+     String cityName;
+    int pin;
+
+} --->Aggregation
+
+class Votercard{
+     long voterId;
+     String constituencyName;
+    String partName;
+
+  }--->Composition
+
+
+What are Wrapper classes:- they are the primitive data types covered through OOPS principles.
+Why Wrapper classes are required?
+ In java, there are some areas where only data which follow the principles of OOPS are permitted for processiong , on those areas how to use primitive data type data? Here comes the Wrapper class.
+
+Which are those areas:
+generic, collection framework, Session variables in JSP & Servlet.
+
+There are 9 Wrapper classes
+  Boolean
+   Byte
+   Short
+   Character
+   Integer
+   Float
+   Long
+   Double
+  Number
+
+  Boolean  Character  Number
+                                         |
+  Byte  Short  Integer Long Float Double
+
+ All Wrapper classes are immutable
+
+  Conversion from Primitive to Wrapper is known as Boxing
+    int x=20;
+   char p='Z';
+   Integer ig=new Integer(x);
+   Character ch=new Character(p);
+ from JDK1.6 --->  Autoboxing
+   Integer jg=x;
+   Character sh=p;
+  Integer k=35;
+  Double d=3.75;
+  Character g='W';
+
+
+Conversion from Wrapper  to Primitive is known as UnBoxing
+  int y=jg;
+  char q=sh;
+
+ compareTo() ----> present in all wrapper classes.
+ It compares  two wrapper class objects of same type.
+  if 1st object is higher than 2nd one, it returns a +ive value.
+if 1st object is lesser than 2nd one, it returns a -ive value.
+if both objects are equal, it returns 0.
+
+AKT678NB53
+
+101,
+102
+103
+
+Intoduction to JShell, var, Final, Object class, Wrapper classes
+
+
+Object, final, abstract, interface, String functions
+
+
+What is the Object class ?
+It is the base class of all classes in Java. It is present in java.lang package.
+
+
+class A {
+             }
+
+class B extends A{
+
+}
+
+
+1.   A      Object
+      |         |
+    ------------
+         |
+        B
+
+2.      Object
+              |
+             A
+              |
+             B
+How JVM identify an element as an instance of a class ?
+Ans: When an element can be referred by the reference variable of Object class, JVM will consider it as an instance of a class.
+
+toString() returns a String/textual representation of the object.
+
+What is final class ?
+What is final method ?
+What is final variable ?
+final variable can be a local variable or only global/instance variable ?
+
+What is abstract method ?
+In a class the member function/method whose body cannot be defined.
+It is normally declared in base classes.
+It must be overriden in derive classes.
+
+What is abstract class ?
+The class whose instance cannot be declared/initilialized.
+The key word abstract must be placed before class name.
+If any method of a class is abstract then that class is also an abstract class.
+
+What is interface ?
+ It is a collection of abstract methods. It provides guidlines to the classes regarding methods and asks the classes who uses the interface to define those methods as per their requirement.  
+From Java 9
+interface can have default method which has body.
+interface can have static method which has body. 
+
+
+The class which uses an interface, the keyword for the use is implements.
+ interface MyDemo
+  {
+      public void show();
+      public void getdata();
+  }
+ class MyApplication implements MyDemo{
+      public void putdata(){
+       }
+        public void show(){
+         }
+      public void getdata(){
+       }
+}
+interface cannot have constructor so it's instance cannot be declared.
+interface can declare reference variable which referes to inplementing class object.
+interface can have member data which is automitally static & final.
+interface member functions/methods are by default public
+A class can implement multiple interfaces.
+an interface can inherit multiple other interfaces by using keyword extends
+if the base class implements one interface, then derive class is also autometically implementing that interface.
+
+  MyApplication ma=new MyApplication();
+ what is ma ?----> reference variable of MyApplication type
+what is new MyApplication() ?---> it is the dynamically created object/instance of MyApplication.
+
+interface 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
