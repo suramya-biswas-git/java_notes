@@ -179,6 +179,191 @@ what is new MyApplication() ?---> it is the dynamically created object/instance 
 interface 
 
 
+Exception Handling
+
+
+system.out.println("hello how are you");
+
+syntax error
+
+int x=7;
+int y=2;
+int z=x/y;
+z=?  ==>3
+
+logical error
+
+
+runtime error
+What is runtime error:?
+It is a type of error which generates due to absence of any resource (hardware or software) or an application asks to perform illegal operation like divide by zero etc.
+When a runtime error occures an abnormal situation prevails and the application cannot procced further. The application abruptly halts itself. 
+The runtime error is known as Exception
+If Exception occures, we should try to restore normalcy. It is called exception handling.
+
+In Java the runtime error is handled by a class Throwable. It is present in java.lang package. It is directly extends Object class.
+                                                Object
+                                                     |
+                                            Throwable
+                                                     |
+  -----------------------------------------------------------------------
+  |                                                                                            |
+Error                                                                               Exception
+
+Error class : It is a kind of runtime error which cannot handle programmaticaly.
+Exception class: It is a kind of  runtime error which can handle programmaticaly.
+try block--->code to task---code for the program
+catch block--->code to handle abnormal situation(exception) in case it oocures.
+finally block--->it's code will be executed compulsory. Whether normal or abnormal situation occures.
+
+ try {
+
+
+  }
+catch(){}
+catch(){}
+catch(){}
+
+ try {
+
+
+  }
+finally{}
+
+There are serveral exception classes are provided by Java/JDK. All these exception classes are derived from class Exception. 
+During client's project development, if there is a requirement for some exceptions which satisfy the client's business need but those exceptions are not present in JDK, here comes the custom's/user define exceptions.
+
+How to create user defined exception class ?
+
+throw clause alerts JVM an user defined exception has been occured .
+
+Under the same try block there exist parent exception & child exception classes, in that case catch block for child exception comes before the parent. 
+
+There are some situations where Exception handling codes are not present, compiler will show error message. These kind of Exceptions are checked by compiler so they are called checked exception.  All checked exceptions are directly extends the Exception.
+eg:  IOException, FileNotFoundException, SQLException, InterreptedException, ClassNotFoundException etc.
+
+
+All unchecked exceptions directly extends RuntimeException
+class MyApplication {
+public void myFunction() throws SQLException, FileNotFoundException, InterreptedException,ClassNotFoundException{
+
+-----
+-----
+------
+-----
+}
+}
+
+What is the diff between throw & throws clause ?
+
+What is functional interface ?
+The interface which has one and only one abstract method. It may have any numbers of static and default methods. 
+
+var datatype of Java 11.
+
+it is an independent data type.
+var x=10;
+var y="Hello";
+var z=3.75;
+Once a value is assigned to a var variable, that variable will become data type that value.
+It cannot set to null.
+It cannot be declared as global/instance variable as a class.
+It can act only as local variable.
+
+ 
+class Parent{
+  public void show(){
+    }
+
+}
+
+
+class Child extends Parent{
+   public void show(){
+     super.show();
+      }
+
+}
+Collection Framework Generic
+List Set Map
+
+What is collection ?
+                                                   Collection
+ database------------------------>Container<-------------------->website
+   Oracle/DB2                          c#/Java/Python      html/css/javascript                                     
+                                                   
+What is Collection Framework in Java ?
+It is a collection of classes, interfaces to store multiple instances of a class.
+Each of the collection class follows a data structure principle.
+In Java all collection classes & interfaces are present in java.util package.
+It is called framework why ?
+
+What is List ----> It stores the elements according to the order of entry. Duplicate elements are permitted.
+What is Set ----> It stores only unique elements. Duplicate element is rejected. It does not maintain the order of entry.
+TreeSet--->  It stores only unique elements. It sorts entries according to the ascending order.
+
+Arrays are always type safe.
+Comparator interface
+Set,Map & Regex
+
+ List--->
+Collections.sort()----> List
+
+Set--->
+Which is the fastest collection class--->HashSet
+
+Map---> It is a type of collection where every data element is stored with an unique id for that data element. The data element is called "value" & unique id is called "key".
+The value can be duplicated but key must be unique.
+It is also part of Java Collection framework but it is not inherated from Collection interface.
+
+How many interfaces are derived from Collection interface ?
+Map ---> supports mutiple null values in value portion, but only one null in key side. Again for only HashMap, LinkedHashMap classes. TreeMap does not allow null value as key.
+
+Write a Java application that will accept the date of birth of a person in dd-mm-yyyy format and then say that whether that person is a senior citizen or not on the basis of today's date.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
